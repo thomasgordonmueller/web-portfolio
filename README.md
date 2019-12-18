@@ -1,0 +1,1 @@
+To view functioning site that includes all media file types please view this project online - https://thomasmuellerdev.com
