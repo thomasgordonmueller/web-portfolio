@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-Black.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-BlackItalic.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-Bold.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-BoldItalic.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-ExtraLight.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-ExtraLightItalic.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-Light.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-LightItalic.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-Regular.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-RegularItalic.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-SemiBold.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SourceSansPro-SemiBoldItalic.ttf" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/photography.min.css">
+
+  <script defer src="./js/jquery.slim.min.js"></script>
+  <script defer src="./js/TweenMax.min.js" type="text/javascript"></script>
+  <script defer src="./js/ScrollMagic.min.js"></script>
+  <script defer src="./js/animation.gsap.min.js"></script>
+  <script defer src="./js/index.js" type="text/javascript"></script>
+  <script defer src="./js/portfolio.js" type="text/javascript"></script>
+  <noscript>Please use a browser with JavaScript enabled for the best expirience!</noscript>
+</head>
+
+<body>
+  <header>
+    <div class="desktop-navbar navbar-container d-none d-sm-none d-md-block">
+      <div class="logo"></div>
+      <ul class="navbar-links">
+        <li id="home"><a href="./photography.html">HOME</a></li>
+        <li id="portfolio"><a href="./portfolio.html">PORTFOLIO</a></li>
+        <li id="information"><a href="./information.html">INFORMATION</a></li>
+        <li id="contact"><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-navbar navbar-container d-sm-block d-md-none">
+      <div class="mobile-expand-button" id="mobile-button">
+        <div id="bar-1" class="expand-bar"></div>
+        <div id="bar-2" class="expand-bar"></div>
+        <div id="bar-3" class="expand-bar"></div>
+      </div>
+      <div class="mobile-links-container">
+        <div class="mobile-close-button" id="close-button">
+          <div id="close-bar-1" class="close-bar"></div>
+          <div id="close-bar-2" class="close-bar"></div>
+        </div>
+        <ul class="navbar-links">
+          <li id="home"><a href="./photography.html">HOME</a></li>
+          <li id="portfolio"><a href="./portfolio.html">PORTFOLIO</a></li>
+          <li id="information"><a href="./information.html">INFORMATION</a></li>
+          <li id="contact"><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="portfolio-header">
+      <h1 class="text-noselect">PORTFOLIO</h1>
+    </div>
+
+    <div id="images-grid-container">
+      <div id="images-grid">
+        <div id="a" image="./images/alaskan-woods.jpg">
+          <img class="grid-image" src="./images/alaskan-woods.jpg" alt="Alaskan Woods">
+        </div>
+        <div id="b" image="./images/glacier-wide.jpg">
+          <img id="glacier-wide" src="./images/glacier-wide.jpg" alt="Glacier Wide">
+        </div>
+        <div id="c" image="./images/foggy-mountain.jpg">
+          <img class="grid-image" src="./images/foggy-mountain.jpg" alt="Foggy Mountain">
+        </div>
+        <div id="d" image="./images/mossy-rocks.jpg">
+          <img class="grid-image" src="./images/mossy-rocks.jpg" alt="Mossy Rocks">
+        </div>
+        <div id="e" image="./images/denali-sunset.jpg">
+          <img class="grid-image" src="./images/denali-sunset.jpg" alt="Denali Sunset">
+        </div>
+        <div id="f" image="./images/tall-trees.jpg">
+          <img class="grid-image" src="./images/tall-trees.jpg" alt="Tall Trees">
+        </div>
+        <div id="g" image="./images/purple-flowers.jpg">
+          <img class="grid-image" src="./images/purple-flowers.jpg" alt="Purple Flowers">
+        </div>
+        <div id="h" image="./images/volcano-falls.jpg">
+          <img class="grid-image" src="./images/volcano-falls.jpg" alt="Volcano Falls">
+        </div>
+        <div id="i" image="./images/cold-lake.jpg">
+          <img class="grid-image" src="./images/cold-lake.jpg" alt="Cold Lake">
+        </div>
+        <div id="j" image="./images/denali-panorama.jpg">
+          <img id="denali-panorama" src="./images/denali-panorama.jpg" alt="Denali Panorama">
+        </div>
+        <div id="k" image="./images/blue-lake.jpg">
+          <img class="grid-image" src="./images/blue-lake.jpg" alt="Blue Lake">
+        </div>
+        <div id="l" image="./images/hikers.jpg">
+          <img class="grid-image" src="./images/hikers.jpg" alt="Hikers">
+        </div>
+        <div id="m" image="./images/glacier-ice.jpg">
+          <img class="grid-image" src="./images/glacier-ice.jpg" alt="Glacier Ice">
+        </div>
+        <div id="n" image="./images/glacier-lake.jpg">
+          <img class="grid-image" src="./images/glacier-lake.jpg" alt="Glacier Lake">
+        </div>
+        <div id="o" image="./images/water-dog.jpg">
+          <img class="grid-image" src="./images/water-dog.jpg" alt="Water Dog">
+        </div>
+        <div id="p" image="./images/hydroplane.jpg">
+          <img class="grid-image" src="./images/hydroplane.jpg" alt="Hydroplane">
+        </div>
+        <div id="q" image="./images/warning-sign.jpg">
+          <img class="grid-image" src="./images/warning-sign.jpg" alt="Warning Sign">
+        </div>
+        <div id="r" image="./images/artistic-tree.jpg">
+          <img class="grid-image" src="./images/artistic-tree.jpg" alt="Artistic Tree">
+        </div>
+        <div id="s" image="./images/mirror-lake.jpg">
+          <img class="grid-image" src="./images/mirror-lake.jpg" alt="Mirror Lake">
+        </div>
+      </div>
+    </div>
+
+    <div id="full-view-container">
+      <div class="full-view-button" id="close-view-button"></div>
+      <div class="full-view-button" id="zoom-in-button"></div>
+      <div class="full-view-button" id="zoom-out-button"></div>
+      <div class="full-view-button" id="next-image-button"></div>
+      <div class="full-view-button" id="previous-image-button"></div>
+      <div id="full-view-image-wrapper">
+        <div id="full-view-image"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&#169 2019 John Smith Photography all rights reserved</p>
+  </footer>
+</body>
+
+</html>

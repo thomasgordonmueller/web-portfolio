@@ -1,0 +1,62 @@
+/* ------------- Loader Animations ------------ */
+.animate-circle-1 {
+  animation: animate-circle-1 7s ease-in-out infinite;
+}
+.animate-circle-2 {
+  animation: animate-circle-1 7s 125ms ease-in-out infinite;
+}
+.animate-circle-3 {
+  animation: animate-circle-1 7s 250ms ease-in-out infinite;
+}
+.animate-circle-4 {
+  animation: animate-circle-1 7s 375ms ease-in-out infinite;
+}
+
+@keyframes animate-circle-1 {
+  0% {transform: rotateZ(0deg);}
+  13% {transform: rotateZ(440deg);}
+  23% {transform: rotateZ(310deg);}
+  34% {transform: rotateZ(380deg);}
+  45% {transform: rotateZ(360deg);}
+  50% {transform: rotateZ(360deg);}
+  63% {transform: rotateZ(-80deg);}
+  73% {transform: rotateZ(50deg);}
+  84% {transform: rotateZ(-20deg);}
+  95% {transform: rotateZ(0deg);}
+  100% {transform: rotateZ(0deg);}
+}
+/* \\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\// */
+
+
+/* -------------- Loader Circles -------------- */
+#main-loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F7FBFB;
+  z-index: 1000;
+}
+
+#circle-1, #circle-2, #circle-3, #circle-4 {
+  position: absolute;
+  top: calc(50vh - 13px);
+  left: calc(50vw - 13px);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  transform-origin: 13px -13px 0px;
+  opacity: 0.5;
+}
+#circle-1 {
+  background-color: red;
+}
+#circle-2 {
+  background-color: blue;
+}
+#circle-3 {
+  background-color: green;
+}
+#circle-4 {
+  background-color: #181818;
+}
+/* \\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\// */

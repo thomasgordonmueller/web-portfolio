@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rubik's Cube Design</title>
+
+  <!-- Defer rest of scripts -->
+  <script defer src="./js/TweenMax.min.js" type="text/javascript"></script>
+  <script defer src="./js/jquery.slim.min.js" type="text/javascript"></script>
+  <script defer src="./js/ScrollMagic.min.js" type="text/javascript"></script>
+  <script defer src="./js/animation.gsap.min.js" type="text/javascript"></script>
+  <script defer src="./js/rellax.min.js" type="text/javascript"></script>
+  <script defer src="./js/rubiks.js" type="text/javascript"></script>
+  <noscript>Please use a browser with JavaScript enabled for the best expirience!</noscript>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link href="./css/normalize.css" type="text/css" rel="stylesheet">
+  <link href="./css/main.min.css" type="text/css" rel="stylesheet">
+
+  <script>
+    window.onload = function () {
+      var ua = window.navigator.userAgent;
+      var msie = ua.indexOf("MSIE ");
+
+      if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+        alert('We do not support IE anymore, please upgrade to Edge or another browser such as Chrome.');
+      }
+    }
+  </script>
+</head>
+
+<body id="rubiks">
+  <div id="rubiks-loader">
+    <div id="loader-cube-container">
+      <div class="individual-cube" id="loader-cube">
+        <div class="loader-face">
+          <div></div>
+        </div>
+        <div id="loader-top-right">
+          <div class="loader-face" id="loader-right">
+            <div></div>
+          </div>
+          <div class="loader-face" id="loader-top">
+            <div></div>
+          </div>
+        </div>
+        <div class="loader-face" id="loader-back">
+          <div></div>
+        </div>
+        <div class="loader-face" id="loader-left">
+          <div></div>
+        </div>
+        <div class="loader-face" id="loader-front">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div id="rubiks-landing-container">
+      <h1 id="rubiks-title-left">RUBIK'S</h1>
+      <h1 id="rubiks-title-right">CUBE</h1>
+
+      <div id="rubiks-container">
+        <div id="rubiks-cube-wrap">
+          <div id="rubiks-cube">
+            <!-- rubiks cube created in main.js -->
+          </div>
+        </div>
+
+        <button class="absolute" id="rotate-arrow-1" onclick="backSpinRight()"></button>
+        <button class="absolute" id="rotate-arrow-2" onclick="middleSpinRight()"></button>
+        <button class="absolute" id="rotate-arrow-3" onclick="frontSpinRight()"></button>
+        <button class="absolute" id="rotate-arrow-4" onclick="topRotateLeft()"></button>
+        <button class="absolute" id="rotate-arrow-5" onclick="middleRotateLeft()"></button>
+        <button class="absolute" id="rotate-arrow-6" onclick="bottomRotateLeft()"></button>
+        <button class="absolute" id="rotate-arrow-7" onclick="leftRotateUp()"></button>
+        <button class="absolute" id="rotate-arrow-8" onclick="centerRotateUp()"></button>
+        <button class="absolute" id="rotate-arrow-9" onclick="rightRotateUp()"></button>
+        <button class="absolute" id="rotate-arrow-10" onclick="frontSpinLeft()"></button>
+        <button class="absolute" id="rotate-arrow-11" onclick="middleSpinLeft()"></button>
+        <button class="absolute" id="rotate-arrow-12" onclick="backSpinLeft()"></button>
+        <button class="absolute" id="rotate-arrow-13" onclick="bottomRotateRight()"></button>
+        <button class="absolute" id="rotate-arrow-14" onclick="middleRotateRight()"></button>
+        <button class="absolute" id="rotate-arrow-15" onclick="topRotateRight()"></button>
+        <button class="absolute" id="rotate-arrow-16" onclick="rightRotateDown()"></button>
+        <button class="absolute" id="rotate-arrow-17" onclick="centerRotateDown()"></button>
+        <button class="absolute" id="rotate-arrow-18" onclick="leftRotateDown()"></button>
+      </div>
+
+      <div id="design-arrow-down"></div>
+
+      <div id="gradient-line-spacer"></div>
+
+      <div id="rubiks-controlbar">
+        <div id="design-mode">Design Mode</div>
+        <div id="play-mode">Play Mode</div>
+      </div>
+
+      <div id="design-arrow-up"></div>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About</title>
+
+  <!-- Loader script -->
+  <link rel="stylesheet" type="text/css" href="./css/loader.min.css">
+
+  <!-- Defer rest of scripts -->
+  <script defer src="./js/TweenMax.min.js" type="text/javascript"></script>
+  <script defer src="./js/jquery.slim.min.js" type="text/javascript"></script>
+  <script defer src="./js/ScrollMagic.min.js" type="text/javascript"></script>
+  <script defer src="./js/animation.gsap.min.js" type="text/javascript"></script>
+  <script src="./js/loader.js" type="text/javascript"></script>
+  <script defer src="./js/rellax.min.js" type="text/javascript"></script>
+  <script defer src="./js/navbar.js" type="text/javascript"></script>
+  <script defer src="./js/about.js" type="text/javascript"></script>
+  <noscript>Please use a browser with JavaScript enabled for the best expirience!</noscript>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link href="./css/normalize.css" type="text/css" rel="stylesheet">
+  <link href="./css/main.min.css" type="text/css" rel="stylesheet">
+
+  <script>
+    window.onload = function () {
+      var ua = window.navigator.userAgent;
+      var msie = ua.indexOf("MSIE ");
+
+      if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+        alert('We do not support IE anymore, please upgrade to Edge or another browser such as Chrome.');
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="main-loader">
+    <div id="circle-1" class="animate-circle-1"></div>
+    <div id="circle-2" class="animate-circle-2"></div>
+    <div id="circle-3" class="animate-circle-3"></div>
+    <div id="circle-4" class="animate-circle-4"></div>
+  </div>
+
+  <header>
+    <div class="navbar-container">
+      <ul class="navbar-links">
+        <li id="home"><a href="./index.html">Home</a></li>
+        <li id="about"><a href="./about.html">About</a></li>
+        <li id="projects"><a href="./projects.html">Projects</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-navbar-container">
+      <div id="mobile-expand-button">
+        <div class="mobile-expand-bar" id="expand-bar-1"></div>
+        <div class="mobile-expand-bar" id="expand-bar-2"></div>
+        <div class="mobile-expand-bar" id="expand-bar-3"></div>
+      </div>
+    </div>
+    <div class="mobile-expand-container">
+      <ul class="navbar-links">
+        <li id="home"><a href="./index.html">Home</a></li>
+        <li id="about"><a href="./about.html">About</a></li>
+        <li id="projects"><a href="./projects.html">Projects</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="about">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-4 col-xl-3">
+          <div id="about-image-container">
+            <div id="image-frame">
+              <img src="./images/headshot.jpg" alt="Thomas Mueller Headshot">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-7 col-xl-7">
+          <div id="about-title-container">
+            <div id="title-wrapper">
+              <h1 id="about-title"></h1>
+              <h4 id="about-subtitle"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-xl-10">
+          <div id="about-spacer-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="about-paragraph-container">
+      <div class="row">
+        <div class="col-xs-12 col-lg-10 offset-lg-1 about-paragraph">
+          <p>Hey! My name is Thomas Mueller and I am a Nashville based front-end developer. I first started building websites when I was working closely with artists and engineers who needed professional websites to showcase their work. I have a background in computer science and music technology and love working on music in my free time.</p>
+        </div>
+
+        <div class="col-xs-12 col-lg-10 offset-lg-1 about-paragraph">
+          <p>My specialty is working with JavaScript and CSS to create dynamic and interactive sites, especially for mobile! I am an aspiring JavaScript developer and am excited to see the languages usage continue to grow. I have a small background in graphic design and enjoy creating custom vector graphics and small edits to images to keep my sites unique.</p>
+        </div>
+
+        <div class="col-xs-12 col-lg-10 offset-lg-1 about-paragraph">
+          <p>I am relatively new to Nashville after moving here less than a year ago from Ohio. I have greatly enjoyed the warmer Fall weather here! I am a big sports fan, especially when it comes to the Green Bay Packers. Whenever I get the chance I and love to go skiing and backpacking out west, really enjoy the outdoors! I am looking forward to getting to know Nashville better and can't wait to grow my life here.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-xs-12 col-md-4 col-xl-4 footer-object">
+        <ul>
+          <a href="https://www.linkedin.com/in/thomas-mueller-524619143/" target="_blank">
+            <li id="linkedin"></li>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100009500385568" target="_blank">
+            <li id="facebook"></li>
+          </a>
+          <a href="https://twitter.com/t_muell" target="_blank">
+            <li id="twitter"></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-12 offset-md-4 col-md-4 col-xl-4 footer-object">
+        <p>All content &#169 Thomas Mueller 2019.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

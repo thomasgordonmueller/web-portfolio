@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Projects</title>
+
+  <!-- Loader script -->
+  <link rel="stylesheet" type="text/css" href="./css/loader.min.css">
+
+  <!-- Defer rest of scripts -->
+  <script defer src="./js/TweenMax.min.js" type="text/javascript"></script>
+  <script defer src="./js/jquery.slim.min.js" type="text/javascript"></script>
+  <script defer src="./js/ScrollMagic.min.js" type="text/javascript"></script>
+  <script defer src="./js/animation.gsap.min.js" type="text/javascript"></script>
+  <script src="./js/loader.js" type="text/javascript"></script>
+  <script defer src="./js/rellax.min.js" type="text/javascript"></script>
+  <script defer src="./js/navbar.js" type="text/javascript"></script>
+  <script defer src="./js/projects.js" type="text/javascript"></script>
+  <noscript>Please use a browser with JavaScript enabled for the best expirience!</noscript>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link href="./css/normalize.css" type="text/css" rel="stylesheet">
+  <link href="./css/main.min.css" type="text/css" rel="stylesheet">
+
+  <script>
+    window.onload = function () {
+      var ua = window.navigator.userAgent;
+      var msie = ua.indexOf("MSIE ");
+
+      if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+        alert('We do not support IE anymore, please upgrade to Edge or another browser such as Chrome.');
+      }
+    }
+  </script>
+</head>
+
+<body id="projects">
+  <div id="main-loader">
+    <div id="circle-1" class="animate-circle-1"></div>
+    <div id="circle-2" class="animate-circle-2"></div>
+    <div id="circle-3" class="animate-circle-3"></div>
+    <div id="circle-4" class="animate-circle-4"></div>
+  </div>
+
+  <header id="projects-header">
+    <div class="navbar-container">
+      <ul class="navbar-links">
+        <li id="home"><a href="./index.html">Home</a></li>
+        <li id="about"><a href="./about.html">About</a></li>
+        <li id="projects"><a href="./projects.html">Projects</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-navbar-container">
+      <div id="mobile-expand-button">
+        <div class="mobile-expand-bar" id="expand-bar-1"></div>
+        <div class="mobile-expand-bar" id="expand-bar-2"></div>
+        <div class="mobile-expand-bar" id="expand-bar-3"></div>
+      </div>
+    </div>
+    <div class="mobile-expand-container">
+      <ul class="navbar-links">
+        <li id="home"><a href="./index.html">Home</a></li>
+        <li id="about"><a href="./about.html">About</a></li>
+        <li id="projects"><a href="./projects.html">Projects</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div id="projects-header-background-image" class="rellax" data-rellax-speed="-4"></div>
+    <div id="projects-header-background"></div>
+    <div id="projects-header-container">
+      <h1>PORTFOLIO</h1>
+    </div>
+
+    <div id="projects-background">
+      <div class="container-fluid" id="projects-container">
+        <div class="row justify-content-sm-center">
+
+          <div class="project-wrapper col-sm-12 col-lg-5">
+            <div class="project" id="photographer-project">
+              <div class="project-description">
+                <h3>Photographer's professional website</h3>
+              </div>
+              <div class="project-image" id="photographer"></div>
+              <div class="project-title">
+                <h2>Nature Photographer</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-wrapper col-sm-12 col-lg-5">
+            <div class="project" id="sample-pack-project">
+              <div class="project-description">
+                <h3>Audio sample pack hosting page</h3>
+              </div>
+              <div class="project-image" id="sample-pack"></div>
+              <div class="project-title">
+                <h2>Sonic Enhancements</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-wrapper col-sm-12 col-lg-5">
+            <div class="project" id="rubiks-project">
+              <div class="project-description">
+                <h3>Online interactive rubik's cube</h3>
+              </div>
+              <div class="project-image" id="rubiks"></div>
+              <div class="project-title">
+                <h2>Rubik's Cube</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-wrapper col-sm-12 col-lg-5">
+            <div class="project" id="tgmaudio-project">
+              <div class="project-description">
+                <h3>Professional audio engineer website</h3>
+              </div>
+              <div class="project-image" id="tgmaudio"></div>
+              <div class="project-title">
+                <h2>TGM Audio</h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-xs-12 col-md-4 col-xl-4 footer-object">
+        <ul>
+          <a href="https://www.linkedin.com/in/thomas-mueller-524619143/" target="_blank">
+            <li id="linkedin"></li>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100009500385568" target="_blank">
+            <li id="facebook"></li>
+          </a>
+          <a href="https://twitter.com/t_muell" target="_blank">
+            <li id="twitter"></li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-xs-12 offset-md-4 col-md-4 col-xl-4 footer-object">
+        <p>All content &#169 Thomas Mueller 2019.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
